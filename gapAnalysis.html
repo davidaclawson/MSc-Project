@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>David Lawson MSc Project</title>
+        <link rel = "stylesheet" href = "assets/css/style.css">
+        <link rel = "stylesheet" href = "assets/css/unsemantic-grid-responsive-tablet.css">
+    </head>
+
+    <body>
+        <!--Beginning of Header-->
+        <header>
+            <h1>David Lawson MSc Project</h1>
+            <nav>
+                <ul style="list-style: none;">
+                    <li><a href="index.html"> Home </a></li>
+                    <li><a href="casestudies.html"> Case Studies </a></li>
+                    <li><a href="findings.html"> Findings </a></li>
+                    <li><a href="framework.html"> Hybrid Cybersecurity Framework </a></li>
+                    <li><a href="sources.html"> Sources </a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--Ending of Header-->
+
+
+
+        <!--Beginning of Main-->
+        <main class = "grid-container">
+            <h2> Gap Analysis Tool </h2>
+                <section class>
+                    <p> Please find a below a tool to be utilised when undertaking a gap analysis of your own current security strategy. To use it, a user will enter their name or company name, and then will fill each input box below with the level of compliance they are adhering to. This compliance status can be split into three categories: 
+                        <ul style="list-style: none;">
+                            <li> Fully Compliant </li>
+                            <li> Partly Compliant </li>
+                            <li> Non Compliant  </li>
+                        </ul>
+                    This information will be stored in a back-end database, and users will be able to see their inputted information by heading to the following webpage here: <a href="gapAnalysisData.php"> Gap Analysis Data </a>. Users will also be able to delete their inputted information on this webpage by entering their name at the bottom of the page. </p>
+                    </p>
+                    <br>
+                    <p> Please use the reference ID to refer to the corresponding requisite on the previous webpage to fully understand the requirements of each requisite. </p>
+                    <br>
+                    <form action="gapAnalysisCode.php" method="POST">
+                    <table>
+                        <tr>
+                            <td><label> Enter Name: </label></td>
+                            <td><input type="text" id="name" name="name"></td>
+                        </tr>
+                        <tr><td><br></td></tr>
+                        <tr>
+                            <th> Reference ID </th>
+                            <th> Requisite (shortened desc.) </th>
+                            <th> Compliance Status </th>
+                        </tr>
+                        <tr>
+                            <td><label> I1: </label></td>
+                            <td><label> Inventory of Assets </label></td>
+                            <td><input type="text" id="I1"  name="identify1"></td>
+                        </tr>
+                        <tr>
+                            <td><label> I2: </label></td>
+                            <td><label> Business Role & Critical Functions </label></td>
+                            <td><input type="text" id="I2"  name="identify2"></td>
+                        </tr>
+                        <tr>
+                            <td><label> I3: </label></td>
+                            <td><label> Stakeholder Roles </label></td>
+                            <td><input type="text" id="I3"  name="identify3"></td>
+                        </tr>
+                        <tr>
+                            <td><label> I4: </label></td>
+                            <td><label> Cybersecurity Policies </label></td>
+                            <td><input type="text" id="I4"  name="identify4"></td>
+                        </tr>
+                        <tr>
+                            <td><label> I5: </label></td>
+                            <td><label> Personnel Cybersecurity Responsibilities </label></td>
+                            <td><input type="text" id="I5"  name="identify5"></td>
+                        </tr>
+                        <tr>
+                            <td><label> I6: </label></td>
+                            <td><label> Review of Policies/Procedures </label></td>
+                            <td><input type="text" id="I6"  name="identify6"></td>
+                        </tr>
+                        <tr><td><br></td></tr>
+                        <tr>
+                            <td><label> P1: </label></td>
+                            <td><label> Role-based Access Controls </label></td>
+                            <td><input type="text" id="P1"  name="protect1"></td>
+                        </tr>
+                        <tr>
+                            <td><label> P2: </label></td>
+                            <td><label> Two-Factor Authentication </label></td>
+                            <td><input type="text" id="P2"  name="protect2"></td>
+                        </tr>
+                        <tr>
+                            <td><label> P3: </label></td>
+                            <td><label> Asset Encryption </label></td>
+                            <td><input type="text" id="P3"  name="protect3"></td>
+                        </tr>
+                        <tr>
+                            <td><label> P4: </label></td>
+                            <td><label> Review Access Controls </label></td>
+                            <td><input type="text" id="P4"  name="protect4"></td>
+                        </tr>
+                        <tr>
+                            <td><label> P5: </label></td>
+                            <td><label> Data Encryption </label></td>
+                            <td><input type="text" id="P5"  name="protect5"></td>
+                        </tr>
+                        <tr>
+                            <td><label> P6: </label></td>
+                            <td><label> Data Handling Policies </label></td>
+                            <td><input type="text" id="P6"  name="protect6"></td>
+                        </tr>
+                        <tr>
+                            <td><label> P7: </label></td>
+                            <td><label> Data Back-ups </label></td>
+                            <td><input type="text" id="P7"  name="protect7"></td>
+                        </tr>
+                        <tr>
+                            <td><label> P8: </label></td>
+                            <td><label> Cybersecurity Training </label></td>
+                            <td><input type="text" id="P8"  name="protect8"></td>
+                        </tr>
+                        <tr>
+                            <td><label> P9: </label></td>
+                            <td><label> VPN Software </label></td>
+                            <td><input type="text" id="P9"  name="protect9"></td>
+                        </tr>
+                        <tr>
+                            <td><label> P10: </label></td>
+                            <td><label> Device Protection Software </label></td>
+                            <td><input type="text" id="P10"  name="protect10"></td>
+                        </tr>
+                        <tr>
+                            <td><label> P11: </label></td>
+                            <td><label> Updating of Device Protection Software </label></td>
+                            <td><input type="text" id="P11"  name="protect11"></td>
+                        </tr>
+                        <tr>
+                            <td><label> P12: </label></td>
+                            <td><label> Disposing of Devices/Data </label></td>
+                            <td><input type="text" id="P12"  name="protect12"></td>
+                        </tr>
+                        <tr><td><br></td></tr>
+                        <tr>
+                            <td><label> D1: </label></td>
+                            <td><label> Traffic Monitoring </label></td>
+                            <td><input type="text" id="D1"  name="detect1"></td>
+                        </tr>
+                        <tr>
+                            <td><label> D2: </label></td>
+                            <td><label> SIEM Systems </label></td>
+                            <td><input type="text" id="D2"  name="detect2"></td>
+                        </tr>
+                        <tr>
+                            <td><label> D3: </label></td>
+                            <td><label> Detection Procedures </label></td>
+                            <td><input type="text" id="D3"  name="detect3"></td>
+                        </tr>
+                        <tr>
+                            <td><label> D4: </label></td>
+                            <td><label> Exposure Assessments </label></td>
+                            <td><input type="text" id="D4"  name="detect4"></td>
+                        </tr>
+                        <tr>
+                            <td><label> D5: </label></td>
+                            <td><label> Penetration Testing </label></td>
+                            <td><input type="text" id="D5"  name="detect5"></td>
+                        </tr>
+                        <tr>
+                            <td><label> D6: </label></td>
+                            <td><label> Anomaly Detection Software </label></td>
+                            <td><input type="text" id="D6"  name="detect6"></td>
+                        </tr>
+                        <tr><td><br></td></tr>
+                        <tr>
+                            <td><label> RS1: </label></td>
+                            <td><label> Incident Response Plan </label></td>
+                            <td><input type="text" id="RS1"  name="respond1"></td>
+                        </tr>
+                        <tr>
+                            <td><label> RS2: </label></td>
+                            <td><label> Incident Roles/Responsbilities </label></td>
+                            <td><input type="text" id="RS2"  name="respond2"></td>
+                        </tr>
+                        <tr>
+                            <td><label> RS3: </label></td>
+                            <td><label> Containment/Eradication Processes </label></td>
+                            <td><input type="text" id="RS3"  name="respond3"></td>
+                        </tr>
+                        <tr>
+                            <td><label> RS4: </label></td>
+                            <td><label> Isolation Software </label></td>
+                            <td><input type="text" id="RS4"  name="respond4"></td>
+                        </tr>
+                        <tr>
+                            <td><label> RS5: </label></td>
+                            <td><label> Stakeholder Incident Communication Routes </label></td>
+                            <td><input type="text" id="RS5"  name="respond5"></td>
+                        </tr>
+                        <tr>
+                            <td><label> RS6: </label></td>
+                            <td><label> Status Indicator Templates </label></td>
+                            <td><input type="text" id="RS6"  name="respond6"></td>
+                        </tr>
+                        <tr><td><br></td></tr>
+                        <tr>
+                            <td><label> RC1: </label></td>
+                            <td><label> Recovery Plan </label></td>
+                            <td><input type="text" id="RC1"  name="recover1"></td>
+                        </tr>
+                        <tr>
+                            <td><label> RC2: </label></td>
+                            <td><label> Recovery Processes Testing </label></td>
+                            <td><input type="text" id="RC2"  name="recover2"></td>
+                        </tr>
+                        <tr>
+                            <td><label> RC3: </label></td>
+                            <td><label> Incident Report Analysis </label></td>
+                            <td><input type="text" id="RC3"  name="recover3"></td>
+                        </tr>
+                        <tr>
+                            <td><label> RC4: </label></td>
+                            <td><label> Policy Updates </label></td>
+                            <td><input type="text" id="RC4"  name="recover4"></td>
+                        </tr>
+                        <tr>
+                            <td><label> RC5: </label></td>
+                            <td><label> Stakeholder Recovery Communication </label></td>
+                            <td><input type="text" id="RC5"  name="recover5"></td>
+                        </tr>
+                        <tr><td><br></td></tr>
+                        <tr>
+                            <td><label> Submit: </label></td>
+                            <td><input type="submit" value="Submit" ></td>
+                        </tr>
+                    </table>
+                </form>
+                </section>
+        </main>
+
+
+
+         <!--Beginning of Footer-->
+         <footer>
+            <section class = "grid-100">
+                <h1>David Lawson MSc Project</h1>
+                <nav>
+                    <ul style="list-style: none;">
+                        <li><a href="index.html"> Home </a></li>
+                        <li><a href="casestudies.html"> Case Studies </a></li>
+                        <li><a href="findings.html"> Findings </a></li>
+                        <li><a href="framework.html"> Hybrid Cybersecurity Framework </a></li>
+                        <li><a href="sources.html"> Sources </a></li>
+                    </ul>
+                </nav>
+            
+            </section>
+                
+            <div id = "copyright">
+                <p> (c) David Lawson 2024 </p>
+            </div>
+        </footer>
+        <!--Ending of Footer-->
+    </body>
+</html>
